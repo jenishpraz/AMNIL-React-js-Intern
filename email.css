@@ -1,0 +1,91 @@
+/* 🎨 Colors */
+:root {
+  --primary: #4f46e5;   /* Indigo */
+  --success: #22c55e;   /* Green */
+  --warning: #eab308;   /* Yellow */
+  --danger: #ef4444;    /* Red */
+  --bg: #f9fafb;        /* Light gray */
+  --white: #ffffff;
+  --border: #d1d5db;    /* Soft gray */
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+  background: var(--bg);
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 600px;
+  background: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Input */
+input {
+  width: 70%;
+  padding: 10px;
+  margin-top: 15px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+input:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+/* Buttons */
+button {
+  padding: 8px 14px;
+  margin-left: 6px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff;
+}
+
+.add { background: var(--success); }
+.update { background: var(--warning); color: #000; }
+.edit { background: var(--primary); }
+.delete { background: var(--danger); }
+
+/* Table */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background: #f3f4f6;
+}
+
+tr:nth-child(even) {
+  background: #f9fafb;
+}
+
+tr:hover {
+  background: #eef2ff;
+}
